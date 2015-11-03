@@ -4,7 +4,7 @@
 //
 //  Created by gizmo on 11/3/15.
 //  Copyright © 2015 Gannon University. All rights reserved.
-//
+//  Source: http://www.appcoda.com/sqlite-database-ios-app-tutorial/
 
 #import "DBController.h"
 #import <sqlite3.h>
