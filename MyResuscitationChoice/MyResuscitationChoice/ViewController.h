@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)addNewRecord:(id)sender;
 
 @end
 

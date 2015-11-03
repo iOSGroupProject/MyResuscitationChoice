@@ -20,6 +20,9 @@
 		85CB73F41BE93236008A085A /* DBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73F21BE93236008A085A /* DBController.m */; };
 		85CB73F61BE93C49008A085A /* myresuscitationchoice.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 85CB73F51BE93C49008A085A /* myresuscitationchoice.sqlite */; };
 		85CB73F71BE93C49008A085A /* myresuscitationchoice.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 85CB73F51BE93C49008A085A /* myresuscitationchoice.sqlite */; };
+		85CB73FA1BE93F60008A085A /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73F91BE93F60008A085A /* DBViewController.m */; };
+		85CB73FB1BE93F60008A085A /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73F91BE93F60008A085A /* DBViewController.m */; };
+		85CB73FC1BE93F60008A085A /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73F91BE93F60008A085A /* DBViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,8 @@
 		85CB73F11BE93236008A085A /* DBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBController.h; sourceTree = "<group>"; };
 		85CB73F21BE93236008A085A /* DBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBController.m; sourceTree = "<group>"; };
 		85CB73F51BE93C49008A085A /* myresuscitationchoice.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = myresuscitationchoice.sqlite; path = ../../../../../../myresuscitationchoice.sqlite; sourceTree = "<group>"; };
+		85CB73F81BE93F60008A085A /* DBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBViewController.h; sourceTree = "<group>"; };
+		85CB73F91BE93F60008A085A /* DBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,8 @@
 				85CB73BC1BE90766008A085A /* Supporting Files */,
 				85CB73F11BE93236008A085A /* DBController.h */,
 				85CB73F21BE93236008A085A /* DBController.m */,
+				85CB73F81BE93F60008A085A /* DBViewController.h */,
+				85CB73F91BE93F60008A085A /* DBViewController.m */,
 			);
 			path = MyResuscitationChoice;
 			sourceTree = "<group>";
@@ -290,6 +297,7 @@
 				85CB73C41BE90766008A085A /* ViewController.m in Sources */,
 				85CB73C11BE90766008A085A /* AppDelegate.m in Sources */,
 				85CB73BE1BE90766008A085A /* main.m in Sources */,
+				85CB73FA1BE93F60008A085A /* DBViewController.m in Sources */,
 				85CB73F31BE93236008A085A /* DBController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85CB73D71BE90766008A085A /* MyResuscitationChoiceTests.m in Sources */,
+				85CB73FB1BE93F60008A085A /* DBViewController.m in Sources */,
 				85CB73F41BE93236008A085A /* DBController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85CB73FC1BE93F60008A085A /* DBViewController.m in Sources */,
 				85CB73E21BE90766008A085A /* MyResuscitationChoiceUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
