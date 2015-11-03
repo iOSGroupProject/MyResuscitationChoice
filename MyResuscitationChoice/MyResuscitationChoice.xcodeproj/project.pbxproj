@@ -18,6 +18,8 @@
 		85CB73F01BE931BA008A085A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CB73EF1BE931BA008A085A /* libsqlite3.tbd */; };
 		85CB73F31BE93236008A085A /* DBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73F21BE93236008A085A /* DBController.m */; };
 		85CB73F41BE93236008A085A /* DBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73F21BE93236008A085A /* DBController.m */; };
+		85CB73F61BE93C49008A085A /* myresuscitationchoice.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 85CB73F51BE93C49008A085A /* myresuscitationchoice.sqlite */; };
+		85CB73F71BE93C49008A085A /* myresuscitationchoice.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 85CB73F51BE93C49008A085A /* myresuscitationchoice.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,7 @@
 		85CB73EF1BE931BA008A085A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		85CB73F11BE93236008A085A /* DBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBController.h; sourceTree = "<group>"; };
 		85CB73F21BE93236008A085A /* DBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBController.m; sourceTree = "<group>"; };
+		85CB73F51BE93C49008A085A /* myresuscitationchoice.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = myresuscitationchoice.sqlite; path = ../../../../../../myresuscitationchoice.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 		85CB73BB1BE90766008A085A /* MyResuscitationChoice */ = {
 			isa = PBXGroup;
 			children = (
+				85CB73F51BE93C49008A085A /* myresuscitationchoice.sqlite */,
 				85CB73BF1BE90766008A085A /* AppDelegate.h */,
 				85CB73C01BE90766008A085A /* AppDelegate.m */,
 				85CB73C21BE90766008A085A /* ViewController.h */,
@@ -256,6 +260,7 @@
 			files = (
 				85CB73CC1BE90766008A085A /* LaunchScreen.storyboard in Resources */,
 				85CB73C91BE90766008A085A /* Assets.xcassets in Resources */,
+				85CB73F61BE93C49008A085A /* myresuscitationchoice.sqlite in Resources */,
 				85CB73C71BE90766008A085A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85CB73F71BE93C49008A085A /* myresuscitationchoice.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
