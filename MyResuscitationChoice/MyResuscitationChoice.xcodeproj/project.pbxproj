@@ -208,6 +208,11 @@
 					85CB73B81BE90766008A085A = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 44L3BQ72S7;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 					85CB73D11BE90766008A085A = {
 						CreatedOnToolsVersion = 7.1;
