@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="1051" y="1021"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Info-->
         <scene sceneID="L83-co-ide">
             <objects>
                 <viewController id="bzf-Sc-27B" customClass="DBViewController" sceneMemberID="viewController">
@@ -72,64 +72,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xh-wT-yZA">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xh-wT-yZA">
                                 <rect key="frame" x="158" y="133" width="285" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ago-4n-9iZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ago-4n-9iZ">
                                 <rect key="frame" x="158" y="202" width="285" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLo-hN-hBo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLo-hN-hBo">
                                 <rect key="frame" x="158" y="278" width="285" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUN-Pl-pgv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUN-Pl-pgv">
                                 <rect key="frame" x="158" y="351" width="285" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fSb-UN-Whx">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fSb-UN-Whx">
                                 <rect key="frame" x="158" y="428" width="285" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="phonePad" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UEY-HS-ieW">
-                                <rect key="frame" x="158" y="520" width="285" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UEY-HS-ieW">
+                                <rect key="frame" x="158" y="494" width="285" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-tU-76m">
-                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                                <animations/>
-                                <items>
-                                    <navigationItem title="Edit Info" id="GaN-lS-4BH">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="vZ7-vx-SkG"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8xh-wT-yZA" firstAttribute="centerX" secondItem="CDB-rM-KZ2" secondAttribute="centerX" id="2US-sP-C8s"/>
+                            <constraint firstItem="QmA-Ct-pgS" firstAttribute="top" secondItem="UEY-HS-ieW" secondAttribute="bottom" constant="32" id="6uL-nf-H37"/>
                             <constraint firstItem="tUN-Pl-pgv" firstAttribute="width" secondItem="CDB-rM-KZ2" secondAttribute="width" multiplier="0.75" id="Dao-Xz-gYe"/>
                             <constraint firstItem="8xh-wT-yZA" firstAttribute="width" secondItem="CDB-rM-KZ2" secondAttribute="width" multiplier="0.75" id="Eib-AC-kCg"/>
                             <constraint firstItem="Ago-4n-9iZ" firstAttribute="width" secondItem="CDB-rM-KZ2" secondAttribute="width" multiplier="0.75" id="IEY-Xa-qjU"/>
                             <constraint firstItem="UEY-HS-ieW" firstAttribute="width" secondItem="CDB-rM-KZ2" secondAttribute="width" multiplier="0.75" id="IwK-8E-WW6"/>
                             <constraint firstItem="fSb-UN-Whx" firstAttribute="width" secondItem="CDB-rM-KZ2" secondAttribute="width" multiplier="0.75" id="JRr-lG-QQ1"/>
+                            <constraint firstItem="8xh-wT-yZA" firstAttribute="leading" secondItem="tUN-Pl-pgv" secondAttribute="leading" id="MJp-Fa-auN"/>
+                            <constraint firstItem="8xh-wT-yZA" firstAttribute="leading" secondItem="SLo-hN-hBo" secondAttribute="leading" id="Og7-F5-O3H"/>
+                            <constraint firstItem="8xh-wT-yZA" firstAttribute="top" secondItem="vQ8-Sp-hsy" secondAttribute="bottom" constant="69" id="Sjg-GS-g1h"/>
                             <constraint firstItem="SLo-hN-hBo" firstAttribute="width" secondItem="CDB-rM-KZ2" secondAttribute="width" multiplier="0.75" id="aip-2a-JWr"/>
+                            <constraint firstItem="fSb-UN-Whx" firstAttribute="top" secondItem="tUN-Pl-pgv" secondAttribute="bottom" constant="47" id="hIN-bK-Xv9"/>
+                            <constraint firstItem="tUN-Pl-pgv" firstAttribute="top" secondItem="SLo-hN-hBo" secondAttribute="bottom" constant="43" id="kCO-RI-gEz"/>
+                            <constraint firstItem="Ago-4n-9iZ" firstAttribute="top" secondItem="8xh-wT-yZA" secondAttribute="bottom" constant="39" id="pLg-ox-skL"/>
+                            <constraint firstAttribute="bottom" secondItem="tUN-Pl-pgv" secondAttribute="bottom" constant="219" id="ssz-mt-hv9"/>
+                            <constraint firstItem="8xh-wT-yZA" firstAttribute="leading" secondItem="fSb-UN-Whx" secondAttribute="leading" id="tjV-yP-mx6"/>
+                            <constraint firstItem="8xh-wT-yZA" firstAttribute="leading" secondItem="UEY-HS-ieW" secondAttribute="leading" id="xGp-u3-qtC"/>
+                            <constraint firstItem="8xh-wT-yZA" firstAttribute="leading" secondItem="Ago-4n-9iZ" secondAttribute="leading" id="y1N-vD-QCD"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Edit Info" id="dwj-qB-RgS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BFR-uf-ogZ">
+                            <connections>
+                                <action selector="saveInfo:" destination="bzf-Sc-27B" id="uKu-s7-D0O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtDateOfBirth" destination="UEY-HS-ieW" id="ga2-QZ-MAs"/>
                         <outlet property="txtFirstname" destination="SLo-hN-hBo" id="MsB-q8-mku"/>

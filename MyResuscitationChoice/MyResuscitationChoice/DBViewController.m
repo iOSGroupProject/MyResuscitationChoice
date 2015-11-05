@@ -42,7 +42,7 @@
 
 - (IBAction)saveInfo:(id)sender {
     // Prepare the query string.
-    NSString *query = [NSString stringWithFormat:@"insert into peopleInfo values(null, '%@', '%@', '%@', '%@', '%@', '%@')", self.txtUserName.text, self.txtPassword.text, self.txtFirstname.text, self.txtLastname.text, self.txtDateOfBirth.text, self.txtPhoneNumber.text];
+    NSString *query = [NSString stringWithFormat:@"insert into userData values(null,'%@', '%@', '%@', '%@', null, null, null, null, '%@', '%@')", self.txtFirstname.text, self.txtLastname.text, self.txtDateOfBirth.text, self.txtPhoneNumber.text, self.txtUserName.text, self.txtPassword.text];
     
     // Execute the query.
     [self.dbController executeQuery:query];
@@ -58,6 +58,8 @@
         NSLog(@"Could not execute the query.");
     }
 }
+
+
 
 /*
 #pragma mark - Navigation
