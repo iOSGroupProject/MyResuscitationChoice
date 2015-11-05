@@ -23,5 +23,30 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)record:(id)sender {
+   
+        [self startCameraControllerFromViewController:self usingDelegate:self];
+       
+    
+    
+}
+#pragma mark - UIImagePickerControllerDelegate methods
+
+- (BOOL) startCameraControllerFromViewController: (UIViewController*) controller usingDelegate: (id <UIImagePickerControllerDelegate, UINavigationControllerDelegate>) delegate {
+    if (([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera] == NO) || (delegate == nil) || (controller == nil))
+        return NO;
+    
+    UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
+    
+    cameraUI.mediaTypes = [NSArray arrayWithObject:(NSString *)kUTTypeMovie];
+    
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    cameraUI.cameraCaptureMode = UIImagePickerControllerCameraCaptureModeVideo;
+    cameraUI.videoQuality = UIImagePickerControllerQualityTypeMedium;
+    
+    cameraUI.delegate = delegate;
+    [controller presentViewController:cameraUI animated:YES completion:nil];
+    return YES;
+}
 
 @end
