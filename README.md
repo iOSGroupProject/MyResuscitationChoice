@@ -4,6 +4,7 @@
 The database that can be used by apps in iOS (and also used by iOS) is called SQLite, and it’s a relational database. It is contained in a C-library that is embedded to the app that is about to use it. Note that it does not consist of a separate service or daemon running on the background and attached to the app. On the contrary, the app runs it as an integral part of it. Nowadays, SQLite lives its third version, so it’s also commonly referred as SQLite 3.
 ###### Variables you can access
 ***Table Name*** = userData
+
 **UID** - Primary Key (auto-count)
 
 **PrimaryFirstName** - The patient or cardholder's first name
