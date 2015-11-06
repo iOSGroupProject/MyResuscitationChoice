@@ -30,6 +30,26 @@
     
     
 }
+- (IBAction)saveMovieButton:(id)sender {
+    if(UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(self.moviePath)) {
+     
+        UISaveVideoAtPathToSavedPhotosAlbum(self.moviePath, self, nil, nil);
+    }
+}
+#pragma mark - Save video callbacks
+
+
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    [self dismissViewControllerAnimated:YES completion:^{
+
+        
+        NSURL *movieURL = info[UIImagePickerControllerMediaURL];
+        self.moviePath = [movieURL path];
+    }];
+}
+
+
+
 #pragma mark - UIImagePickerControllerDelegate methods
 
 - (BOOL) startCameraControllerFromViewController: (UIViewController*) controller usingDelegate: (id <UIImagePickerControllerDelegate, UINavigationControllerDelegate>) delegate {
@@ -48,5 +68,7 @@
     [controller presentViewController:cameraUI animated:YES completion:nil];
     return YES;
 }
+
+
 
 @end

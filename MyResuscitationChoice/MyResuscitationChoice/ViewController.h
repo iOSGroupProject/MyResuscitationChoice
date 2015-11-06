@@ -11,8 +11,10 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 
 
+
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property (nonatomic,strong) NSString * moviePath;
 
 
 @end
