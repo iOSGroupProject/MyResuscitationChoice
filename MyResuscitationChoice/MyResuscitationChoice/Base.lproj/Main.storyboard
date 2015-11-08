@@ -26,7 +26,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveMovieButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nKs-i3-eph"/>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5yW-Wc-TNr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfc-WJ-eDy">
@@ -36,10 +36,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ror-4g-110"/>
+                                </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XkK-c1-W9Z" customClass="scrollView">
-                                <rect key="frame" x="20" y="45" width="560" height="274"/>
-                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u60-uW-1E6">
                                 <rect key="frame" x="390" y="366" width="150" height="90"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -51,30 +51,31 @@
                                     <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y1y-VH-UJo"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hello this is ahmed" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ST-su-G6Z">
+                                <rect key="frame" x="132" y="70" width="337" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nfc-WJ-eDy" firstAttribute="width" secondItem="BN3-SG-FVC" secondAttribute="width" id="0Lw-iH-0Jy"/>
-                            <constraint firstItem="BN3-SG-FVC" firstAttribute="top" secondItem="XkK-c1-W9Z" secondAttribute="bottom" constant="47" id="0bE-xv-CLw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XkK-c1-W9Z" secondAttribute="trailing" id="2fr-FI-LT4"/>
-                            <constraint firstItem="nfc-WJ-eDy" firstAttribute="top" secondItem="XkK-c1-W9Z" secondAttribute="bottom" constant="47" id="51Z-sQ-jxW"/>
-                            <constraint firstItem="u60-uW-1E6" firstAttribute="top" secondItem="XkK-c1-W9Z" secondAttribute="bottom" constant="47" id="5o6-DV-Zhm"/>
                             <constraint firstItem="nfc-WJ-eDy" firstAttribute="height" secondItem="BN3-SG-FVC" secondAttribute="height" id="8Io-7Z-aF7"/>
                             <constraint firstItem="nfc-WJ-eDy" firstAttribute="leading" secondItem="BN3-SG-FVC" secondAttribute="trailing" constant="19" id="9yE-Kh-0zU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BN3-SG-FVC" secondAttribute="bottom" constant="144" id="9yk-4t-eFT"/>
                             <constraint firstItem="BN3-SG-FVC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="A8r-BF-TzG"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BN3-SG-FVC" secondAttribute="bottom" constant="144" id="FLM-Vo-T8n"/>
-                            <constraint firstItem="u60-uW-1E6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="346" id="J4y-05-f1C"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u60-uW-1E6" secondAttribute="bottom" constant="144" id="Q3Q-J2-nkw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nfc-WJ-eDy" secondAttribute="bottom" constant="144" id="GVo-Ny-LaB"/>
+                            <constraint firstItem="u60-uW-1E6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="346" id="KAW-C9-9MG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u60-uW-1E6" secondAttribute="bottom" constant="144" id="Kd2-Io-c2X"/>
                             <constraint firstItem="u60-uW-1E6" firstAttribute="height" secondItem="nfc-WJ-eDy" secondAttribute="height" id="S0d-Xk-HIM"/>
                             <constraint firstItem="u60-uW-1E6" firstAttribute="width" secondItem="nfc-WJ-eDy" secondAttribute="width" id="Sui-aS-RyI"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nfc-WJ-eDy" secondAttribute="bottom" constant="144" id="g9g-Ns-fZf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="u60-uW-1E6" secondAttribute="trailing" constant="40" id="hLt-M9-d7O"/>
                             <constraint firstItem="u60-uW-1E6" firstAttribute="leading" secondItem="nfc-WJ-eDy" secondAttribute="trailing" constant="15" id="iaK-Cp-WPm"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XkK-c1-W9Z" secondAttribute="bottom" constant="281" id="njj-en-VE2"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="XkK-c1-W9Z" secondAttribute="leading" id="npb-W3-kJe"/>
-                            <constraint firstItem="XkK-c1-W9Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="rEK-cu-vjN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ahmed1" destination="7ST-su-G6Z" id="FGe-9Z-Awl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
