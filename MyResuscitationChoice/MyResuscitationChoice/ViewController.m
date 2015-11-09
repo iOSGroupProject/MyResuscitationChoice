@@ -10,8 +10,7 @@
 
 @interface ViewController ()
 
-
-
+@property UIImagePickerController * Ahmed;
 @end
 
 @implementation ViewController
@@ -28,9 +27,11 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)record:(id)sender {
-   
+    
         [self startCameraControllerFromViewController:self usingDelegate:self];
-        
+        [self viewWillAppear:NO];
+
+    
     
 }
 - (IBAction)save:(id)sender {
@@ -80,19 +81,22 @@
     if (([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera] == NO) || (delegate == nil) || (controller == nil))
         return NO;
     
-    
+ 
     
     
     UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
+
+    
     
     cameraUI.mediaTypes = [NSArray arrayWithObject:(NSString *)kUTTypeMovie];
     
     cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
     cameraUI.cameraCaptureMode = UIImagePickerControllerCameraCaptureModeVideo;
     cameraUI.videoQuality = UIImagePickerControllerQualityTypeMedium;
-    
-    cameraUI.cameraOverlayView = self.ahmed1;
+    [self scribt];
+    cameraUI.cameraOverlayView=_ahmed1;
     cameraUI.delegate = delegate;
+    
     [controller presentViewController:cameraUI animated:YES completion:nil];
     
     
@@ -102,10 +106,26 @@
 
 - (void) imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [self dismissViewControllerAnimated:YES completion:nil];
+   
 }
 
-#pragma mark - MPMoviePlayerController notification callbacks
+-(NSString *)scribt{
+    
+    return self.ahmed1.text = @"hello this is me , Ahmed Alanazi  will try make this work.I will keep work on it";
 
+    
+}
+#pragma mark - MPMoviePlayerController notification callbacks
+ - (void)viewWillAppear:(BOOL)animated
+ {
+	[super viewWillAppear:animated];
+ 
+	//Add sub view
+//	ViewController *vc1 = [[ViewController alloc] init];
+	[self.view addSubview:_ahmed1];
+    
+     _ahmed1.frame = CGRectMake(100, 100, 320, 160);   //Set the sub view position within this main view
+ }
 
 
 @end

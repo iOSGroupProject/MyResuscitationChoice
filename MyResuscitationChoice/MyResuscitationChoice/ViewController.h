@@ -13,10 +13,8 @@
 
 
 
-
-
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *ahmed1;
+@property (weak, nonatomic) IBOutlet UILabel *ahmed1;
 
 @property (nonatomic,strong) MPMoviePlayerController * moviePlayer;
 @property (nonatomic,strong) NSString * moviePath;
