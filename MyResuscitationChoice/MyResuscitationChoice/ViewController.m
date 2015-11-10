@@ -29,7 +29,7 @@
 - (IBAction)record:(id)sender {
     
         [self startCameraControllerFromViewController:self usingDelegate:self];
-        [self viewWillAppear:NO];
+        [self viewWillAppear:YES];
 
     
     
@@ -96,8 +96,25 @@
     [self scribt];
     cameraUI.cameraOverlayView=_ahmed1;
     cameraUI.delegate = delegate;
-    
     [controller presentViewController:cameraUI animated:YES completion:nil];
+
+    
+    
+//    UIView *controllerView = cameraUI.view;
+//    
+//    controllerView.alpha = 0.0;
+//    controllerView.transform = CGAffineTransformMakeScale(0.5, 0.5);
+//    
+//    [[[[UIApplication sharedApplication] delegate] window] addSubview:controllerView];
+//    
+//    [UIView animateWithDuration:0.3
+//                          delay:0.0
+//                        options:UIViewAnimationOptionCurveLinear
+//                     animations:^{
+//                         controllerView.alpha = 10.0;
+//                     }
+//                     completion:nil];
+    
     
     
     return YES;
@@ -111,7 +128,8 @@
 
 -(NSString *)scribt{
     
-    return self.ahmed1.text = @"hello this is me , Ahmed Alanazi  will try make this work.I will keep work on it";
+    return self.ahmed1.text =  @"hello this is me , Ahmed Alanazi  will try make this work.I will keep work on it";
+ 
 
     
 }
@@ -122,9 +140,11 @@
  
 	//Add sub view
 //	ViewController *vc1 = [[ViewController alloc] init];
-	[self.view addSubview:_ahmed1];
+     self.ahmed1.adjustsFontSizeToFitWidth=YES;
+     self.ahmed1.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+	[self.view addSubview:self.ahmed1];
     
-     _ahmed1.frame = CGRectMake(100, 100, 320, 160);   //Set the sub view position within this main view
+    self.ahmed1.frame = CGRectMake(100, 100, 320, 160);   //Set the sub view position within this main view
  }
 
 
