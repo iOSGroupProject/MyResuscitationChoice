@@ -3,7 +3,7 @@
 //  SignUpPage
 //
 //  Created by Nakka, Abhilash on 11/8/15.
-//  Copyright © 2015 Nakka, Abhilash. All rights reserved.1
+//  Copyright © 2015 Nakka, Abhilash. All rights reserved.12
 //
 
 #import "ViewController.h"
