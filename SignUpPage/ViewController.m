@@ -12,6 +12,7 @@
 
 @end
 
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -26,8 +27,8 @@
     }
     else {
         NSLog(@"User is already Registered");
-              _reEnterPwd.hidden = YES;
-              _registerBtn.hidden = YES;
+        _reEnterPwd.hidden = YES;
+        _registerBtn.hidden = YES;
     }
     
     
@@ -40,7 +41,7 @@
 }
 
 - (IBAction)registerUser:(id)sender {
-    if([_usernameField.text isEqualToString:@""] || [_passwordFiled.text isEqualToString:@""] || [_reEnterPwd.text isEqualToString:@""] || [_primaryLastName.text isEqualToString:@""] || [_primaryFirstName.text isEqualToString:@""] || [_phoneNumber.text isEqualToString:@""]|| [_emailID.text isEqualToString:@""] ){
+    if([_usernameField.text isEqualToString:@""] || [_passwordFiled.text isEqualToString:@""] || [_reEnterPwd.text isEqualToString:@""] || [_primaryLastName.text isEqualToString:@""] || [_primaryFirstName.text isEqualToString:@""] || [_phoneNumber.text isEqualToString:@""]|| [_emailID.text isEqualToString:@""] || [_dateOfBirth.text isEqualToString:@""]){
         
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Ooops!" message:@"you must enter all the fields" preferredStyle:UIAlertControllerStyleAlert];
         
@@ -50,15 +51,7 @@
         [self presentViewController:alert animated:YES completion:nil];
     }
     
-    else {
-        [self checkPasswordMatch];
-    }
-    
-    
-}
-
-- (void)checkPasswordMatch {
-    if ([_passwordFiled.text isEqualToString:_reEnterPwd.text]) {
+    else if ([_passwordFiled.text isEqualToString:_reEnterPwd.text]) {
         NSLog(@"Password Match");
         [self registerNewUser];
     }
@@ -90,8 +83,10 @@
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
     [success addAction:defaultAction];
     [self presentViewController:success animated:YES completion:nil];
-
+    
 }
+
+
 
 
 
