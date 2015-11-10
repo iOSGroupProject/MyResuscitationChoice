@@ -81,7 +81,7 @@
     
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
     [success addAction:defaultAction];
-    [self performSegueWithIdentifier:@"register" sender:self];
+    [self performSegueWithIdentifier:@"login" sender:self];
   
 }
 
