@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "LoggedIn.h"
+#import "LoginPage.h"
 
 @interface ViewController ()
 
@@ -30,8 +32,6 @@
         _registerBtn.hidden = YES;
     }
     
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,6 +48,7 @@
         
         [alert addAction:defaultAction];
         [self presentViewController:alert animated:YES completion:nil];
+        
     }
     
     else if ([_passwordFiled.text isEqualToString:_reEnterPwd.text]) {
@@ -81,27 +82,22 @@
     
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
     [success addAction:defaultAction];
-    [self performSegueWithIdentifier:@"login" sender:self];
-  
+    [self presentViewController:success animated:YES completion:nil];
+    [self navRef];
 }
 
-
-
-- (IBAction)login:(id)sender {
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if([_usernameField.text isEqualToString:[defaults objectForKey:@"username"]] && [_passwordFiled.text isEqualToString:[defaults objectForKey:@"password"]]) {
-        [self performSegueWithIdentifier:@"login" sender:self];
-        
-    }
-    
-    else{
-        UIAlertController * success = [UIAlertController alertControllerWithTitle:@"Ooops" message:@"Your username and password does not match. Plese try again." preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
-        [success addAction:defaultAction];
-        [self presentViewController:success animated:YES completion:nil];
-    }
+-(void) navRef {
+    [self performSegueWithIdentifier:@"Register" sender:nil];
 }
+
+- (IBAction)login:(id)sender{
+    [self loginView];
+    
+}
+-(void)loginView {
+    [self performSegueWithIdentifier:@"login" sender:nil];
+}
+
 
 
 

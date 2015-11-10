@@ -15,6 +15,8 @@
 		4AE458451BEFE42700699CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE458431BEFE42700699CC4 /* LaunchScreen.storyboard */; };
 		4AE458501BEFE42700699CC4 /* SignUpPageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4584F1BEFE42700699CC4 /* SignUpPageTests.m */; };
 		4AE4585B1BEFE42700699CC4 /* SignUpPageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4585A1BEFE42700699CC4 /* SignUpPageUITests.m */; };
+		D089FB691BF279500065CBB2 /* LoggedIn.m in Sources */ = {isa = PBXBuildFile; fileRef = D089FB681BF279500065CBB2 /* LoggedIn.m */; settings = {ASSET_TAGS = (); }; };
+		D089FB6C1BF2850A0065CBB2 /* LoginPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D089FB6B1BF2850A0065CBB2 /* LoginPage.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		4AE458561BEFE42700699CC4 /* SignUpPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignUpPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE4585A1BEFE42700699CC4 /* SignUpPageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpPageUITests.m; sourceTree = "<group>"; };
 		4AE4585C1BEFE42700699CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D089FB671BF279500065CBB2 /* LoggedIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggedIn.h; sourceTree = "<group>"; };
+		D089FB681BF279500065CBB2 /* LoggedIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedIn.m; sourceTree = "<group>"; };
+		D089FB6A1BF2850A0065CBB2 /* LoginPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPage.h; sourceTree = "<group>"; };
+		D089FB6B1BF2850A0065CBB2 /* LoginPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,10 @@
 				4AE4583B1BEFE42700699CC4 /* ViewController.h */,
 				4AE4583C1BEFE42700699CC4 /* ViewController.m */,
 				4AE4583E1BEFE42700699CC4 /* Main.storyboard */,
+				D089FB6A1BF2850A0065CBB2 /* LoginPage.h */,
+				D089FB6B1BF2850A0065CBB2 /* LoginPage.m */,
+				D089FB671BF279500065CBB2 /* LoggedIn.h */,
+				D089FB681BF279500065CBB2 /* LoggedIn.m */,
 				4AE458411BEFE42700699CC4 /* Assets.xcassets */,
 				4AE458431BEFE42700699CC4 /* LaunchScreen.storyboard */,
 				4AE458461BEFE42700699CC4 /* Info.plist */,
@@ -272,7 +282,9 @@
 			files = (
 				4AE4583D1BEFE42700699CC4 /* ViewController.m in Sources */,
 				4AE4583A1BEFE42700699CC4 /* AppDelegate.m in Sources */,
+				D089FB691BF279500065CBB2 /* LoggedIn.m in Sources */,
 				4AE458371BEFE42700699CC4 /* main.m in Sources */,
+				D089FB6C1BF2850A0065CBB2 /* LoginPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				4AE458611BEFE42700699CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AE458621BEFE42700699CC4 /* Build configuration list for PBXNativeTarget "SignUpPageTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				4AE458641BEFE42700699CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AE458651BEFE42700699CC4 /* Build configuration list for PBXNativeTarget "SignUpPageUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				4AE458671BEFE42700699CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
