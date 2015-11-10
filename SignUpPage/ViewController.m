@@ -23,7 +23,6 @@
     
     if(![defaults boolForKey:@"registered"]) {
         NSLog(@"No User Registered");
-        _loginBtn.hidden = YES;
     }
     else {
         NSLog(@"User is already Registered");
@@ -82,13 +81,27 @@
     
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
     [success addAction:defaultAction];
-    [self presentViewController:success animated:YES completion:nil];
-    
+    [self performSegueWithIdentifier:@"register" sender:self];
+  
 }
 
 
 
-
+- (IBAction)login:(id)sender {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if([_usernameField.text isEqualToString:[defaults objectForKey:@"username"]] && [_passwordFiled.text isEqualToString:[defaults objectForKey:@"password"]]) {
+        [self performSegueWithIdentifier:@"login" sender:self];
+        
+    }
+    
+    else{
+        UIAlertController * success = [UIAlertController alertControllerWithTitle:@"Ooops" message:@"Your username and password does not match. Plese try again." preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
+        [success addAction:defaultAction];
+        [self presentViewController:success animated:YES completion:nil];
+    }
+}
 
 
 

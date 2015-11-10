@@ -156,6 +156,8 @@
                         <outlet property="reEnterPwd" destination="5VQ-WL-S4i" id="ef6-ze-Shs"/>
                         <outlet property="registerBtn" destination="Bmr-Xt-VMr" id="mhi-tZ-a6u"/>
                         <outlet property="usernameField" destination="KNj-0b-nkm" id="fcs-ki-TD6"/>
+                        <segue destination="TNI-af-ZYn" kind="show" identifier="Register" id="V8j-FL-Uhn"/>
+                        <segue destination="gWJ-KJ-fak" kind="show" identifier="login" id="ezj-FO-VgY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -163,22 +165,48 @@
             <point key="canvasLocation" x="-224" y="382"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="4NQ-ui-8gq">
+        <scene sceneID="9IP-yi-5fo">
             <objects>
-                <viewController id="Ywc-Cu-pe0" sceneMemberID="viewController">
+                <viewController id="gWJ-KJ-fak" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PZX-wS-yIQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ts1-Ub-tEQ"/>
+                        <viewControllerLayoutGuide type="top" id="owd-qL-h5r"/>
+                        <viewControllerLayoutGuide type="bottom" id="V0Q-if-Lej"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Rvm-eS-7Qe">
+                    <view key="view" contentMode="scaleToFill" id="YdI-4L-ecd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TOe-Yl-ydX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3U-5t-OxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="697" y="393"/>
+            <point key="canvasLocation" x="-224" y="1121"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q24-t6-KHG">
+            <objects>
+                <viewController id="TNI-af-ZYn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6KI-uy-E6T"/>
+                        <viewControllerLayoutGuide type="bottom" id="dOm-z3-UiG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aS7-Bb-F5U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All the videos should be displayed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ED4-I2-sIs">
+                                <rect key="frame" x="20" y="28" width="448" height="144"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YwS-SR-76V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="387"/>
         </scene>
     </scenes>
 </document>
