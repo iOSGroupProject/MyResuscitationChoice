@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		857F84F31BEBE0B800B67D83 /* myresuscitationchoice.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 857F84F21BEBE0B800B67D83 /* myresuscitationchoice.sqlite */; };
+		850233511BF3A231000818B7 /* myresuscitationchoice.sql in Frameworks */ = {isa = PBXBuildFile; fileRef = 850233501BF3A231000818B7 /* myresuscitationchoice.sql */; };
 		85CB73BE1BE90766008A085A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73BD1BE90766008A085A /* main.m */; };
 		85CB73C11BE90766008A085A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73C01BE90766008A085A /* AppDelegate.m */; };
 		85CB73C41BE90766008A085A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73C31BE90766008A085A /* ViewController.m */; };
@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		857F84F21BEBE0B800B67D83 /* myresuscitationchoice.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = myresuscitationchoice.sqlite; sourceTree = "<group>"; };
+		850233501BF3A231000818B7 /* myresuscitationchoice.sql */ = {isa = PBXFileReference; lastKnownFileType = file; name = myresuscitationchoice.sql; path = ../../../../../../../../../Users/gizmo/Documents/git/MyResuscitationChoiceRepo/MyResuscitationChoice/MyResuscitationChoice/myresuscitationchoice.sql; sourceTree = SDKROOT; };
 		85CB73B91BE90766008A085A /* MyResuscitationChoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyResuscitationChoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CB73BD1BE90766008A085A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85CB73BF1BE90766008A085A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				850233511BF3A231000818B7 /* myresuscitationchoice.sql in Frameworks */,
 				85CB73F01BE931BA008A085A /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +96,7 @@
 		85CB73B01BE90766008A085A = {
 			isa = PBXGroup;
 			children = (
+				850233501BF3A231000818B7 /* myresuscitationchoice.sql */,
 				85CB73EF1BE931BA008A085A /* libsqlite3.tbd */,
 				85CB73BB1BE90766008A085A /* MyResuscitationChoice */,
 				85CB73D51BE90766008A085A /* MyResuscitationChoiceTests */,
@@ -116,7 +118,6 @@
 		85CB73BB1BE90766008A085A /* MyResuscitationChoice */ = {
 			isa = PBXGroup;
 			children = (
-				857F84F21BEBE0B800B67D83 /* myresuscitationchoice.sqlite */,
 				85CB73BF1BE90766008A085A /* AppDelegate.h */,
 				85CB73C01BE90766008A085A /* AppDelegate.m */,
 				85CB73C21BE90766008A085A /* ViewController.h */,
@@ -267,7 +268,6 @@
 				85CB73CC1BE90766008A085A /* LaunchScreen.storyboard in Resources */,
 				85CB73C91BE90766008A085A /* Assets.xcassets in Resources */,
 				85CB73C71BE90766008A085A /* Main.storyboard in Resources */,
-				857F84F31BEBE0B800B67D83 /* myresuscitationchoice.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
