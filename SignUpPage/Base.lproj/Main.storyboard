@@ -69,8 +69,7 @@
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2if-pg-FQJ"/>
-                                    <action selector="loginUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bi2-JS-cQ0"/>
+                                    <segue destination="gWJ-KJ-fak" kind="show" id="Wil-Eo-7D7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTt-vX-QUj">
@@ -160,7 +159,6 @@
                         <outlet property="registerBtn" destination="Bmr-Xt-VMr" id="mhi-tZ-a6u"/>
                         <outlet property="usernameField" destination="KNj-0b-nkm" id="fcs-ki-TD6"/>
                         <segue destination="TNI-af-ZYn" kind="show" identifier="Register" id="V8j-FL-Uhn"/>
-                        <segue destination="gWJ-KJ-fak" kind="show" identifier="login" id="ezj-FO-VgY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -221,7 +219,7 @@
                                 </state>
                                 <connections>
                                     <action selector="LoginButon:" destination="gWJ-KJ-fak" eventType="touchUpInside" id="mzP-fG-bkB"/>
-                                    <action selector="LoginButton:" destination="gWJ-KJ-fak" eventType="touchUpInside" id="UGs-Rf-6VA"/>
+                                    <segue destination="TNI-af-ZYn" kind="show" identifier="login" id="aD8-T6-VMo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -270,7 +268,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YwS-SR-76V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="387"/>
+            <point key="canvasLocation" x="562" y="913"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="aD8-T6-VMo"/>
+    </inferredMetricsTieBreakers>
 </document>
