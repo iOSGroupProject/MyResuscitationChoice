@@ -82,7 +82,7 @@
     
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
     [success addAction:defaultAction];
-    [self presentViewController:success animated:YES completion:nil];
+    //[self presentViewController:success animated:YES completion:nil];
     [self navRef];
 }
 
