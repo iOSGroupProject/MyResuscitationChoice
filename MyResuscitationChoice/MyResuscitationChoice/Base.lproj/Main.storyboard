@@ -69,35 +69,13 @@
                                     <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y1y-VH-UJo"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4BC-nl-mqq">
-                                <rect key="frame" x="56" y="98" width="383" height="179"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sXh-3E-hMv">
-                                        <rect key="frame" x="0.0" y="0.0" width="383" height="179"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt1-hl-0qk">
-                                                <rect key="frame" x="0.0" y="0.0" width="383" height="179"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="383" id="OyD-cT-mAu"/>
-                                                    <constraint firstAttribute="height" constant="179" id="ekO-Ul-aTl"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="u60-uW-1E6" firstAttribute="height" secondItem="nfc-WJ-eDy" secondAttribute="height" id="2eW-Pj-h4t"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u60-uW-1E6" secondAttribute="bottom" constant="144" id="4QR-y3-yCG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nfc-WJ-eDy" secondAttribute="bottom" constant="144" id="A43-Lh-pMz"/>
-                            <constraint firstItem="sXh-3E-hMv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="Cxc-JL-QDF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BN3-SG-FVC" secondAttribute="bottom" constant="144" id="Fqv-i4-YV8"/>
-                            <constraint firstItem="sXh-3E-hMv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="78" id="JwT-Lh-qAE"/>
                             <constraint firstItem="nfc-WJ-eDy" firstAttribute="height" secondItem="BN3-SG-FVC" secondAttribute="height" id="MGH-v0-CeL"/>
                             <constraint firstItem="nfc-WJ-eDy" firstAttribute="width" secondItem="BN3-SG-FVC" secondAttribute="width" id="OMA-oF-UrI"/>
                             <constraint firstItem="u60-uW-1E6" firstAttribute="width" secondItem="nfc-WJ-eDy" secondAttribute="width" id="YOb-r2-tcm"/>
@@ -107,9 +85,6 @@
                             <constraint firstItem="u60-uW-1E6" firstAttribute="leading" secondItem="nfc-WJ-eDy" secondAttribute="trailing" constant="15" id="rIY-bs-fJL"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="ahmed1" destination="Xt1-hl-0qk" id="ALn-c4-Rs5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

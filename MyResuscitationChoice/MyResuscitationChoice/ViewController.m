@@ -27,9 +27,10 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)record:(id)sender {
-    
         [self startCameraControllerFromViewController:self usingDelegate:self];
-        [self viewWillAppear:YES];
+//      [self viewWillAppear:YES];
+    
+
 
     
     
@@ -81,7 +82,27 @@
     if (([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera] == NO) || (delegate == nil) || (controller == nil))
         return NO;
     
- 
+    
+    
+
+    CGRect lablelocation = CGRectMake(0,45, 410,600);
+    
+    UILabel *lable = [[UILabel alloc]initWithFrame:lablelocation];
+//    lable.backgroundColor = [UIColor redColor];
+    lable.backgroundColor = [UIColor colorWithRed:1.0 green:10.0 blue:1.0 alpha:0.4];
+
+//    lable.lineBreakMode=2;
+    lable.numberOfLines = 0;
+//    lable.adjustsFontSizeToFitWidth = YES;
+    
+    [self.view addSubview:lable];
+  
+    //lable.transform = CGAffineTransformMakeRotation(M_PI/2);
+    
+
+    lable.text=  [self scribt];
+
+
     
     
     UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
@@ -93,12 +114,14 @@
     cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
     cameraUI.cameraCaptureMode = UIImagePickerControllerCameraCaptureModeVideo;
     cameraUI.videoQuality = UIImagePickerControllerQualityTypeMedium;
-    [self scribt];
-    cameraUI.cameraOverlayView=_ahmed1;
+    
+
+    cameraUI.cameraOverlayView = lable;
+ 
     cameraUI.delegate = delegate;
     [controller presentViewController:cameraUI animated:YES completion:nil];
 
-    
+
     
 //    UIView *controllerView = cameraUI.view;
 //    
@@ -128,23 +151,27 @@
 
 -(NSString *)scribt{
     
-    return self.ahmed1.text =  @"hello this is me , Ahmed Alanazi  will try make this work.I will keep work on it";
+//    return self.ahmed1.text =  @"hello this is me , Ahmed Alanazi  will try make this work.I will keep work on it";
+    return  @"hello this is me , Ahmed Alanazi  will try make this work.I will keep work on ithello this is me , Ahmed Alanazi  will try make this work.I will keep work on ithello this is me , Ahmed Alanazi  will try make this work.I will keep work on it";
  
 
     
 }
 #pragma mark - MPMoviePlayerController notification callbacks
- - (void)viewWillAppear:(BOOL)animated
+ - ( void)viewWillAppear:(BOOL)animated
  {
 	[super viewWillAppear:animated];
- 
-	//Add sub view
-//	ViewController *vc1 = [[ViewController alloc] init];
-     self.ahmed1.adjustsFontSizeToFitWidth=YES;
-     self.ahmed1.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
-	[self.view addSubview:self.ahmed1];
     
-    self.ahmed1.frame = CGRectMake(100, 100, 320, 160);   //Set the sub view position within this main view
+     
+
+// 
+//	//Add sub view
+////	ViewController *vc1 = [[ViewController alloc] init];
+//     self.ahmed1.adjustsFontSizeToFitWidth=YES;
+//     self.ahmed1.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+//	[self.view addSubview:self.ahmed1];
+//    
+//    self.ahmed1.frame = CGRectMake(100, 100, 320, 160);   //Set the sub view position within this main view
  }
 
 
