@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtLastname;
 @property (weak, nonatomic) IBOutlet UITextField *txtDateOfBirth;
 @property (weak, nonatomic) IBOutlet UITextField *txtPhoneNumber;
+@property (weak, nonatomic) IBOutlet UITextField *txtEmail;
 - (IBAction)saveInfo:(id)sender;
 
 @end

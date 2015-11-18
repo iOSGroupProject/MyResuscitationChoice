@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-- (IBAction)addNewRecord:(id)sender;
-@end
+@interface ViewController : UIViewController  <UITableViewDelegate, UITableViewDataSource>
 
+@end

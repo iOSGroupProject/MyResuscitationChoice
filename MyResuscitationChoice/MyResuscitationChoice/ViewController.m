@@ -7,9 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "DBController.h"
 
 @interface ViewController ()
+@property (nonatomic, strong) DBController *dbManager;
 
+@property (nonatomic, strong) NSArray *arrPeopleInfo;
+
+-(void)loadData;
 @end
 
 @implementation ViewController
@@ -17,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.tblPeople.delegate = self;
+    self.tblPeople.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {
