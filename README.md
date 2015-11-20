@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/iOSGroupProject/MyResuscitationChoice.png?label=ready&title=Ready)](https://waffle.io/iOSGroupProject/MyResuscitationChoice)
 # MyResuscitationChoice
 
 ### About SQLite
@@ -13,6 +14,8 @@ The database that can be used by apps in iOS (and also used by iOS) is called SQ
 
 **PrimaryPhoneNumber** - The patient or cardholder's phone number
 
+**PrimaryEmail** - The patient or cardholder's email
+
 **PrimaryDateOfBirth** - The patient or cardholder's date of birth 
 
 **AdvancedDirectiveLocation** - Unique identifier for the video	
@@ -25,7 +28,12 @@ The database that can be used by apps in iOS (and also used by iOS) is called SQ
 
 **AgentDateOfBirth** The health care agent's date of birth	
 
-**UserChoice** - The resuscitation choice for the patient of cardholder 	
+**UserChoice** - The resuscitation choice for the patient of cardholder 
+
+**Username** - The users username
+
+**Password** - The users password 
+
 ###### Connecting your class
 ```
 #import "DBController.h"
