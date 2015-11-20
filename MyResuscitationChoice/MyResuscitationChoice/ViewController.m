@@ -22,8 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.tblPeople.delegate = self;
-    self.tblPeople.dataSource = self;
+//    self.tblPeople.delegate = self;
+//    self.tblPeople.dataSource = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
