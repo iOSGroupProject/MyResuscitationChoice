@@ -11,6 +11,7 @@
 @interface ViewController ()
 
 @property UIImagePickerController * Ahmed;
+@property ( nonatomic) NSString * PatientDirectedVideoMessage;
 @end
 
 @implementation ViewController
@@ -25,6 +26,17 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)choice:(id)sender
+{
+    NSString *theChoice = [sender currentTitle];
+    if ([theChoice isEqualToString:@"Full code"])
+    {
+        self.PatientDirectedVideoMessage = @"Full code";
+    
+    }
+
 }
 - (IBAction)record:(id)sender {
         [self startCameraControllerFromViewController:self usingDelegate:self];
@@ -83,14 +95,13 @@
         return NO;
     
     
-    
 
     CGRect lablelocation = CGRectMake(0,45, 410,600);
     
     UILabel *lable = [[UILabel alloc]initWithFrame:lablelocation];
 //    lable.backgroundColor = [UIColor redColor];
-    lable.backgroundColor = [UIColor colorWithRed:1.0 green:10.0 blue:1.0 alpha:0.4];
-
+    lable.backgroundColor = [UIColor clearColor];
+    
 //    lable.lineBreakMode=2;
     lable.numberOfLines = 0;
 //    lable.adjustsFontSizeToFitWidth = YES;
@@ -101,6 +112,16 @@
     
 
     lable.text=  [self scribt];
+    [lable sizeToFit];
+    
+    CGRect Firstlablelocation = CGRectMake(0,0, 410,600);
+    
+    UILabel *Firstlable = [[UILabel alloc]initWithFrame:Firstlablelocation];
+    //    lable.backgroundColor = [UIColor redColor];
+    Firstlable.backgroundColor = [UIColor colorWithRed:1.0 green:10.0 blue:1.0 alpha:0.4];
+    
+    [lable addSubview:Firstlable];
+
 
 
     
@@ -152,9 +173,11 @@
 -(NSString *)scribt{
     
 //    return self.ahmed1.text =  @"hello this is me , Ahmed Alanazi  will try make this work.I will keep work on it";
-    return  @"hello this is me , Ahmed Alanazi  will try make this work.I will keep work on ithello this is me , Ahmed Alanazi  will try make this work.I will keep work on ithello this is me , Ahmed Alanazi  will try make this work.I will keep work on it";
+//    if ([self.PatientDirectedVideoMessage isEqualToString:@"Full code"] ){
+    NSString *mys =  @"This is My Resuscitation Safety Message!\nMy initial Resuscitation Status is Full Code!\nMy name is {(Fred Mirarchi & My Date of Birth is February 25, 1970)}\nMy mind is sound as I voluntarily record this video message & the Institute on HealthCare Directives validated it.\nPlease follow all Resuscitation Protocols (ACLS, ATLS, Sepsis and Stroke Resuscitation).\nIf I develop an end stage medical condition, persistent vegetative state or state of advanced dementia, then please see the instructions contained in my advance directive (Located at).\nFor further guidance with respect to treatment or questions regarding any living will documentation please contact my Health Care Agent {(Joe Smith at 555-555-5555)}.";
  
-
+    return  mys;
+//    }
     
 }
 #pragma mark - MPMoviePlayerController notification callbacks
