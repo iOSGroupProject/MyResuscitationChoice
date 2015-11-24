@@ -60,6 +60,42 @@
     
 }
 
+- (IBAction)Play:(id)sender {
+    NSString *strem = @"https://www.youtube.com/watch?v=ccqQ_BRGsAU";
+    NSURL *url = [NSURL URLWithString:strem];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [_video loadRequest:request];
+    
+}
+
+- (IBAction)play2:(id)sender {
+    NSString *strem = @"https://www.youtube.com/watch?v=AdtsXcZC0_w";
+    NSURL *url = [NSURL URLWithString:strem];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [_video2 loadRequest:request];
+}
+
+- (IBAction)Play3:(id)sender {
+    NSString *strem = @"https://www.youtube.com/watch?v=7eabz4V-tvU";
+    NSURL *url = [NSURL URLWithString:strem];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [_video3 loadRequest:request];
+}
+
+- (IBAction)Play4:(id)sender {
+    NSString *strem = @"https://www.youtube.com/watch?v=m7dNfre2IWA";
+    NSURL *url = [NSURL URLWithString:strem];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [_video4 loadRequest:request];
+}
+
+- (IBAction)Play5:(id)sender {
+    NSString *strem = @"https://www.youtube.com/watch?v=x0O43ugg8zU";
+    NSURL *url = [NSURL URLWithString:strem];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [_video5 loadRequest:request];
+}
+
 
 #pragma mark - Save video callbacks
 
