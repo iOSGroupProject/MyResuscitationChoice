@@ -13,6 +13,14 @@
 		4DD3FFD91BED5E850071AFEF /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD3FFD81BED5E850071AFEF /* AVKit.framework */; };
 		4DD5D5851BEBFFC9000F203E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD5D5841BEBFFC9000F203E /* MediaPlayer.framework */; };
 		4DD5D5871BEBFFEC000F203E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD5D5861BEBFFEC000F203E /* MobileCoreServices.framework */; };
+		8598AF701C052C350004401F /* LoggedIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6D1C052C350004401F /* LoggedIn.m */; };
+		8598AF711C052C350004401F /* LoginPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6F1C052C350004401F /* LoginPage.m */; };
+		8598AF741C052C700004401F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF731C052C700004401F /* SignUpViewController.m */; };
+		8598AF751C052CB90004401F /* SignUpViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF721C052C700004401F /* SignUpViewController.h */; };
+		8598AF761C052CB90004401F /* LoggedIn.h in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6C1C052C350004401F /* LoggedIn.h */; };
+		8598AF771C052CB90004401F /* LoginPage.h in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6E1C052C350004401F /* LoginPage.h */; };
+		8598AF781C052CB90004401F /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73BF1BE90766008A085A /* AppDelegate.h */; };
+		8598AF791C052CB90004401F /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73C21BE90766008A085A /* ViewController.h */; };
 		85CB73BE1BE90766008A085A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73BD1BE90766008A085A /* main.m */; };
 		85CB73C11BE90766008A085A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73C01BE90766008A085A /* AppDelegate.m */; };
 		85CB73C41BE90766008A085A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73C31BE90766008A085A /* ViewController.m */; };
@@ -47,6 +55,12 @@
 		4DD3FFD81BED5E850071AFEF /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		4DD5D5841BEBFFC9000F203E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4DD5D5861BEBFFEC000F203E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8598AF6C1C052C350004401F /* LoggedIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggedIn.h; sourceTree = "<group>"; };
+		8598AF6D1C052C350004401F /* LoggedIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedIn.m; sourceTree = "<group>"; };
+		8598AF6E1C052C350004401F /* LoginPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPage.h; sourceTree = "<group>"; };
+		8598AF6F1C052C350004401F /* LoginPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPage.m; sourceTree = "<group>"; };
+		8598AF721C052C700004401F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		8598AF731C052C700004401F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		85CB73B91BE90766008A085A /* MyResuscitationChoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyResuscitationChoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CB73BD1BE90766008A085A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85CB73BF1BE90766008A085A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +133,12 @@
 		85CB73BB1BE90766008A085A /* MyResuscitationChoice */ = {
 			isa = PBXGroup;
 			children = (
+				8598AF721C052C700004401F /* SignUpViewController.h */,
+				8598AF731C052C700004401F /* SignUpViewController.m */,
+				8598AF6C1C052C350004401F /* LoggedIn.h */,
+				8598AF6D1C052C350004401F /* LoggedIn.m */,
+				8598AF6E1C052C350004401F /* LoginPage.h */,
+				8598AF6F1C052C350004401F /* LoginPage.m */,
 				85CB73BF1BE90766008A085A /* AppDelegate.h */,
 				85CB73C01BE90766008A085A /* AppDelegate.m */,
 				85CB73C21BE90766008A085A /* ViewController.h */,
@@ -128,7 +148,6 @@
 				85CB73CA1BE90766008A085A /* LaunchScreen.storyboard */,
 				85CB73CD1BE90766008A085A /* Info.plist */,
 				85CB73BC1BE90766008A085A /* Supporting Files */,
-				857A3CE71BF138B60057ED70 /* travis.yml */,
 			);
 			path = MyResuscitationChoice;
 			sourceTree = "<group>";
@@ -272,7 +291,6 @@
 				85CB73CC1BE90766008A085A /* LaunchScreen.storyboard in Resources */,
 				85CB73C91BE90766008A085A /* Assets.xcassets in Resources */,
 				85CB73C71BE90766008A085A /* Main.storyboard in Resources */,
-				857A3CE81BF138B60057ED70 /* travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +315,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8598AF751C052CB90004401F /* SignUpViewController.h in Sources */,
+				8598AF761C052CB90004401F /* LoggedIn.h in Sources */,
+				8598AF771C052CB90004401F /* LoginPage.h in Sources */,
+				8598AF781C052CB90004401F /* AppDelegate.h in Sources */,
+				8598AF791C052CB90004401F /* ViewController.h in Sources */,
 				85CB73C41BE90766008A085A /* ViewController.m in Sources */,
 				85CB73C11BE90766008A085A /* AppDelegate.m in Sources */,
+				8598AF741C052C700004401F /* SignUpViewController.m in Sources */,
+				8598AF701C052C350004401F /* LoggedIn.m in Sources */,
 				85CB73BE1BE90766008A085A /* main.m in Sources */,
+				8598AF711C052C350004401F /* LoginPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
