@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="1191" y="-523"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="fD1-uq-vKP">
             <objects>
-                <viewController id="RQv-Mm-OBL" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="RQv-Mm-OBL" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hH8-ed-K0O"/>
                         <viewControllerLayoutGuide type="bottom" id="IXe-Yg-Iy5"/>
@@ -148,7 +148,7 @@
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="registerUser:" destination="RQv-Mm-OBL" eventType="touchUpInside" id="o2n-DE-Tte"/>
+                                    <action selector="registerUser:" destination="RQv-Mm-OBL" eventType="touchUpInside" id="Kih-tN-hjJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5F-Gt-bsY">
@@ -239,12 +239,16 @@
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="dateOfBirth" destination="Lyz-Wi-Jl2" id="jnN-HV-LQu"/>
-                        <outlet property="emailID" destination="04L-zx-vWp" id="Brb-ow-ND6"/>
-                        <outlet property="loginBtn" destination="k5F-Gt-bsY" id="xXw-nS-5rZ"/>
-                        <outlet property="phoneNumber" destination="HzJ-1c-sR1" id="vjL-Jr-dwo"/>
-                        <outlet property="reEnterPwd" destination="FE1-ps-BPF" id="fYm-6S-sxl"/>
-                        <outlet property="registerBtn" destination="kZC-Wp-xdh" id="5d4-S8-XYF"/>
+                        <outlet property="dateOfBirth" destination="Lyz-Wi-Jl2" id="dXJ-Q8-jDx"/>
+                        <outlet property="emailID" destination="04L-zx-vWp" id="cFh-lt-A6i"/>
+                        <outlet property="loginBtn" destination="k5F-Gt-bsY" id="b3N-kw-9AK"/>
+                        <outlet property="passwordFiled" destination="w2M-Ow-YcV" id="5xK-f1-uf1"/>
+                        <outlet property="phoneNumber" destination="HzJ-1c-sR1" id="Ief-8D-25l"/>
+                        <outlet property="primaryFirstName" destination="OvP-6T-Rbx" id="uGz-Bp-t4H"/>
+                        <outlet property="primaryLastName" destination="F4h-pg-WbN" id="IXq-qA-2jP"/>
+                        <outlet property="reEnterPwd" destination="FE1-ps-BPF" id="Vve-iJ-BLg"/>
+                        <outlet property="registerBtn" destination="kZC-Wp-xdh" id="FCf-hl-KuX"/>
+                        <outlet property="usernameField" destination="Y3T-QL-f8r" id="PIQ-aU-4Mt"/>
                         <segue destination="48B-l5-gRj" kind="show" identifier="Register" id="3OM-8O-CZw">
                             <nil key="action"/>
                         </segue>
@@ -369,6 +373,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3OM-8O-CZw"/>
+        <segue reference="8Lr-lk-3Ge"/>
     </inferredMetricsTieBreakers>
 </document>
