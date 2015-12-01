@@ -13,6 +13,8 @@
 		4DD3FFD91BED5E850071AFEF /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD3FFD81BED5E850071AFEF /* AVKit.framework */; };
 		4DD5D5851BEBFFC9000F203E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD5D5841BEBFFC9000F203E /* MediaPlayer.framework */; };
 		4DD5D5871BEBFFEC000F203E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD5D5861BEBFFEC000F203E /* MobileCoreServices.framework */; };
+		858C58111C0DDC9900216A7B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 858C58101C0DDC9900216A7B /* libsqlite3.tbd */; };
+		858C58141C0DDCFE00216A7B /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C58131C0DDCFE00216A7B /* DBManager.m */; };
 		8598AF701C052C350004401F /* LoggedIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6D1C052C350004401F /* LoggedIn.m */; };
 		8598AF711C052C350004401F /* LoginPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6F1C052C350004401F /* LoginPage.m */; };
 		8598AF741C052C700004401F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF731C052C700004401F /* SignUpViewController.m */; };
@@ -55,6 +57,9 @@
 		4DD3FFD81BED5E850071AFEF /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		4DD5D5841BEBFFC9000F203E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4DD5D5861BEBFFEC000F203E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		858C58101C0DDC9900216A7B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		858C58121C0DDCFE00216A7B /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		858C58131C0DDCFE00216A7B /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		8598AF6C1C052C350004401F /* LoggedIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggedIn.h; sourceTree = "<group>"; };
 		8598AF6D1C052C350004401F /* LoggedIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedIn.m; sourceTree = "<group>"; };
 		8598AF6E1C052C350004401F /* LoginPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPage.h; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858C58111C0DDC9900216A7B /* libsqlite3.tbd in Frameworks */,
 				4DD3FFD91BED5E850071AFEF /* AVKit.framework in Frameworks */,
 				4DD3FFD71BED582F0071AFEF /* UIKit.framework in Frameworks */,
 				4DD3FFD51BED58240071AFEF /* Foundation.framework in Frameworks */,
@@ -113,6 +119,7 @@
 		85CB73B01BE90766008A085A = {
 			isa = PBXGroup;
 			children = (
+				858C58101C0DDC9900216A7B /* libsqlite3.tbd */,
 				85CB73BB1BE90766008A085A /* MyResuscitationChoice */,
 				85CB73D51BE90766008A085A /* MyResuscitationChoiceTests */,
 				85CB73E01BE90766008A085A /* MyResuscitationChoiceUITests */,
@@ -148,6 +155,8 @@
 				85CB73CA1BE90766008A085A /* LaunchScreen.storyboard */,
 				85CB73CD1BE90766008A085A /* Info.plist */,
 				85CB73BC1BE90766008A085A /* Supporting Files */,
+				858C58121C0DDCFE00216A7B /* DBManager.h */,
+				858C58131C0DDCFE00216A7B /* DBManager.m */,
 			);
 			path = MyResuscitationChoice;
 			sourceTree = "<group>";
@@ -318,6 +327,7 @@
 				8598AF751C052CB90004401F /* SignUpViewController.h in Sources */,
 				8598AF761C052CB90004401F /* LoggedIn.h in Sources */,
 				8598AF771C052CB90004401F /* LoginPage.h in Sources */,
+				858C58141C0DDCFE00216A7B /* DBManager.m in Sources */,
 				8598AF781C052CB90004401F /* AppDelegate.h in Sources */,
 				8598AF791C052CB90004401F /* ViewController.h in Sources */,
 				85CB73C41BE90766008A085A /* ViewController.m in Sources */,
