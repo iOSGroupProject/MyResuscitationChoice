@@ -14,6 +14,7 @@
 		4DD5D5851BEBFFC9000F203E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD5D5841BEBFFC9000F203E /* MediaPlayer.framework */; };
 		4DD5D5871BEBFFEC000F203E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD5D5861BEBFFEC000F203E /* MobileCoreServices.framework */; };
 		858722AB1C0E39D70018F93F /* database.sql in Resources */ = {isa = PBXBuildFile; fileRef = 858722AA1C0E39D70018F93F /* database.sql */; };
+		858722AE1C0E62B10018F93F /* AgentSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858722AD1C0E62B10018F93F /* AgentSignUpViewController.m */; };
 		858C58111C0DDC9900216A7B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 858C58101C0DDC9900216A7B /* libsqlite3.tbd */; };
 		858C58141C0DDCFE00216A7B /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C58131C0DDCFE00216A7B /* DBManager.m */; };
 		8598AF701C052C350004401F /* LoggedIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6D1C052C350004401F /* LoggedIn.m */; };
@@ -54,6 +55,8 @@
 		4DD5D5841BEBFFC9000F203E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4DD5D5861BEBFFEC000F203E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		858722AA1C0E39D70018F93F /* database.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sql; sourceTree = SOURCE_ROOT; };
+		858722AC1C0E62B10018F93F /* AgentSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgentSignUpViewController.h; sourceTree = "<group>"; };
+		858722AD1C0E62B10018F93F /* AgentSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgentSignUpViewController.m; sourceTree = "<group>"; };
 		858C58101C0DDC9900216A7B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		858C58121C0DDCFE00216A7B /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		858C58131C0DDCFE00216A7B /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				858C58121C0DDCFE00216A7B /* DBManager.h */,
 				858C58131C0DDCFE00216A7B /* DBManager.m */,
 				858722AA1C0E39D70018F93F /* database.sql */,
+				858722AC1C0E62B10018F93F /* AgentSignUpViewController.h */,
+				858722AD1C0E62B10018F93F /* AgentSignUpViewController.m */,
 			);
 			path = MyResuscitationChoice;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 			files = (
 				858C58141C0DDCFE00216A7B /* DBManager.m in Sources */,
 				85CB73C41BE90766008A085A /* ViewController.m in Sources */,
+				858722AE1C0E62B10018F93F /* AgentSignUpViewController.m in Sources */,
 				85CB73C11BE90766008A085A /* AppDelegate.m in Sources */,
 				8598AF741C052C700004401F /* SignUpViewController.m in Sources */,
 				8598AF701C052C350004401F /* LoggedIn.m in Sources */,
