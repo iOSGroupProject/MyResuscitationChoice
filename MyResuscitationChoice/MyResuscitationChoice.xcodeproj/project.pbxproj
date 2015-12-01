@@ -19,11 +19,6 @@
 		8598AF701C052C350004401F /* LoggedIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6D1C052C350004401F /* LoggedIn.m */; };
 		8598AF711C052C350004401F /* LoginPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6F1C052C350004401F /* LoginPage.m */; };
 		8598AF741C052C700004401F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF731C052C700004401F /* SignUpViewController.m */; };
-		8598AF751C052CB90004401F /* SignUpViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF721C052C700004401F /* SignUpViewController.h */; };
-		8598AF761C052CB90004401F /* LoggedIn.h in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6C1C052C350004401F /* LoggedIn.h */; };
-		8598AF771C052CB90004401F /* LoginPage.h in Sources */ = {isa = PBXBuildFile; fileRef = 8598AF6E1C052C350004401F /* LoginPage.h */; };
-		8598AF781C052CB90004401F /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73BF1BE90766008A085A /* AppDelegate.h */; };
-		8598AF791C052CB90004401F /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73C21BE90766008A085A /* ViewController.h */; };
 		85CB73BE1BE90766008A085A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73BD1BE90766008A085A /* main.m */; };
 		85CB73C11BE90766008A085A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73C01BE90766008A085A /* AppDelegate.m */; };
 		85CB73C41BE90766008A085A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB73C31BE90766008A085A /* ViewController.m */; };
@@ -328,12 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8598AF751C052CB90004401F /* SignUpViewController.h in Sources */,
-				8598AF761C052CB90004401F /* LoggedIn.h in Sources */,
-				8598AF771C052CB90004401F /* LoginPage.h in Sources */,
 				858C58141C0DDCFE00216A7B /* DBManager.m in Sources */,
-				8598AF781C052CB90004401F /* AppDelegate.h in Sources */,
-				8598AF791C052CB90004401F /* ViewController.h in Sources */,
 				85CB73C41BE90766008A085A /* ViewController.m in Sources */,
 				85CB73C11BE90766008A085A /* AppDelegate.m in Sources */,
 				8598AF741C052C700004401F /* SignUpViewController.m in Sources */,
