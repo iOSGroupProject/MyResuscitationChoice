@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SignUpViewController : UIViewController
+@interface SignUpViewController : UIViewController <UITextFieldDelegate>
+
 @property (weak, nonatomic) IBOutlet UIButton *registerBtn;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
@@ -24,6 +25,8 @@
 - (IBAction)registerUser:(id)sender;
 - (IBAction)login:(id)sender;
 
+// For Database
+- (IBAction)saveInfo:(id)sender;
 
 @end
 

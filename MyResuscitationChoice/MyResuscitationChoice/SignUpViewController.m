@@ -9,17 +9,29 @@
 #import "SignUpViewController.h"
 #import "LoggedIn.h"
 #import "LoginPage.h"
+#import "DBManager.h"
 
 @interface SignUpViewController ()
-
+@property (nonatomic, strong) DBManager *dbManager;
 @end
 
 
 @implementation SignUpViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // For Database
+    self.primaryFirstName.delegate = self;
+    self.primaryLastName.delegate = self;
+    self.usernameField.delegate = self;
+    self.passwordFiled.delegate = self;
+    self.dateOfBirth.delegate = self;
+    self.emailID.delegate = self;
+    self.phoneNumber.delegate = self;
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"database.sql"];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
@@ -99,44 +111,33 @@
 }
 
 
+- (IBAction)addNewRecord:(id)sender {
+ //   [self performSegueWithIdentifier:@"idSegueEditInfo" sender:self]; Segue to loged in screne
+}
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 
+- (IBAction)saveInfo:(id)sender {
+    // Prepare the query string.
+    NSString *query = [NSString stringWithFormat:@"INSERT INTO userInfo (PrimaryFirstName, PrimaryLastName, Username, Password, PrimaryDateOfBirth, PrimaryEmail, AgentPhoneNumber) VALUES ('%@', '%@', '%@', '%@', '%@', '%@', '%@')", self.primaryFirstName, self.primaryLastName, self.usernameField, self.passwordFiled, self.dateOfBirth, self.emailID, self.phoneNumber];
+    
+    // Execute the query.
+    [self.dbManager executeQuery:query];
+    
+    // If the query was successfully executed then pop the view controller.
+    if (self.dbManager.affectedRows != 0) {
+        NSLog(@"Query was executed successfully. Affected rows = %d", self.dbManager.affectedRows);
+        
+        // Pop the view controller.
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else{
+        NSLog(@"Could not execute the query.");
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// peopleInfo(UID integer primary key, PrimaryFirstName text, PrimaryLastName text, PrimaryPhoneNumber text, PrimaryEmail text, PrimaryDateOfBirth text, AdvancedDirectiveLocation text, AgentFirstName text, AgentLastName text, AgentPhoneNumber text, AgentDateOfBirth text, UserChoice text, Username text, Password text)
 @end
