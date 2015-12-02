@@ -13,6 +13,7 @@
 		4DD3FFD91BED5E850071AFEF /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD3FFD81BED5E850071AFEF /* AVKit.framework */; };
 		4DD5D5851BEBFFC9000F203E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD5D5841BEBFFC9000F203E /* MediaPlayer.framework */; };
 		4DD5D5871BEBFFEC000F203E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD5D5861BEBFFEC000F203E /* MobileCoreServices.framework */; };
+		4DF949FC1C0EE8F6004DA032 /* Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF949FB1C0EE8F6004DA032 /* Signature.m */; };
 		858722AB1C0E39D70018F93F /* database.sql in Resources */ = {isa = PBXBuildFile; fileRef = 858722AA1C0E39D70018F93F /* database.sql */; };
 		858C58111C0DDC9900216A7B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 858C58101C0DDC9900216A7B /* libsqlite3.tbd */; };
 		858C58141C0DDCFE00216A7B /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C58131C0DDCFE00216A7B /* DBManager.m */; };
@@ -53,6 +54,8 @@
 		4DD3FFD81BED5E850071AFEF /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		4DD5D5841BEBFFC9000F203E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4DD5D5861BEBFFEC000F203E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4DF949FA1C0EE8F6004DA032 /* Signature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Signature.h; sourceTree = "<group>"; };
+		4DF949FB1C0EE8F6004DA032 /* Signature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Signature.m; sourceTree = "<group>"; };
 		858722AA1C0E39D70018F93F /* database.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sql; sourceTree = SOURCE_ROOT; };
 		858C58101C0DDC9900216A7B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		858C58121C0DDCFE00216A7B /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				85CB73C01BE90766008A085A /* AppDelegate.m */,
 				85CB73C21BE90766008A085A /* ViewController.h */,
 				85CB73C31BE90766008A085A /* ViewController.m */,
+				4DF949FA1C0EE8F6004DA032 /* Signature.h */,
+				4DF949FB1C0EE8F6004DA032 /* Signature.m */,
 				85CB73C51BE90766008A085A /* Main.storyboard */,
 				85CB73C81BE90766008A085A /* Assets.xcassets */,
 				85CB73CA1BE90766008A085A /* LaunchScreen.storyboard */,
@@ -323,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF949FC1C0EE8F6004DA032 /* Signature.m in Sources */,
 				858C58141C0DDCFE00216A7B /* DBManager.m in Sources */,
 				85CB73C41BE90766008A085A /* ViewController.m in Sources */,
 				85CB73C11BE90766008A085A /* AppDelegate.m in Sources */,

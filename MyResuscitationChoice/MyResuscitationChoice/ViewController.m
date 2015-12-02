@@ -17,6 +17,9 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
+
+
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -216,6 +219,9 @@
 //    }
     
 }
+
+
+
 #pragma mark - MPMoviePlayerController notification callbacks
  - ( void)viewWillAppear:(BOOL)animated
  {
