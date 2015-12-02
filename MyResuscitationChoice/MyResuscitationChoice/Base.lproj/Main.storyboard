@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RQv-Mm-OBL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="My7-o7-1Wo">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="-537"/>
+            <point key="canvasLocation" x="1619" y="-533"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CzX-xW-wna">
@@ -178,7 +178,7 @@
                                 <connections>
                                     <action selector="registerUser:" destination="RQv-Mm-OBL" eventType="touchUpInside" id="Kih-tN-hjJ"/>
                                     <action selector="saveInfo:" destination="RQv-Mm-OBL" eventType="touchUpInside" id="LHD-Ol-NS7"/>
-                                    <segue destination="ayp-uR-6yz" kind="show" id="asV-fx-RxF"/>
+                                    <segue destination="ayp-uR-6yz" kind="show" identifier="Register" id="asV-fx-RxF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5F-Gt-bsY">
@@ -220,14 +220,14 @@
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FE1-ps-BPF">
                                 <rect key="frame" x="155" y="285" width="199" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dd/mm/yy" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lyz-Wi-Jl2">
                                 <rect key="frame" x="155" y="334" width="199" height="30"/>
@@ -474,6 +474,7 @@
                         <outlet property="agentreEnterPwd" destination="Cpw-Td-rLZ" id="uq9-ct-gqb"/>
                         <outlet property="agentregisterBtn" destination="qvH-sa-bNb" id="HvU-0Y-YiX"/>
                         <outlet property="agentusernameField" destination="9Ni-d9-0cG" id="CQi-8v-Gwv"/>
+                        <segue destination="ayp-uR-6yz" kind="show" identifier="agentRegister" id="WJh-V2-lGO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQv-FT-HjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -540,7 +541,7 @@
                                 </state>
                                 <connections>
                                     <action selector="LoginButon:" destination="2js-N8-dfX" eventType="touchUpInside" id="mcv-kp-Ghq"/>
-                                    <segue destination="ayp-uR-6yz" kind="show" id="c7p-AL-sFY"/>
+                                    <segue destination="ayp-uR-6yz" kind="show" identifier="login" id="ojb-2i-NLZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -554,7 +555,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KxK-vw-OTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92" y="-219"/>
+            <point key="canvasLocation" x="108" y="233"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vyw-Rz-Yup">
@@ -695,7 +696,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="asV-fx-RxF"/>
-        <segue reference="5Hy-dT-3Gh"/>
+        <segue reference="YsR-PW-rU2"/>
+        <segue reference="WJh-V2-lGO"/>
     </inferredMetricsTieBreakers>
 </document>

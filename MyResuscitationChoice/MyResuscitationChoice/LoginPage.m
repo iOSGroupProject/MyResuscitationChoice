@@ -39,7 +39,7 @@
 - (IBAction)LoginButon:(id)sender {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if([_usernameTextField.text isEqualToString:[defaults objectForKey:@"username"]] && [_passwordTextField.text isEqualToString:[defaults objectForKey:@"password"]]) {
-        [self performSegueWithIdentifier:@"login" sender:self];
+        [self performSegueWithIdentifier:@"login" sender:nil];
         
     }
     
