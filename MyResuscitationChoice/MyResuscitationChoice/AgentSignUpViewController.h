@@ -24,6 +24,7 @@
 
 - (IBAction)agentregisterUser:(id)sender;
 - (IBAction)agentlogin:(id)sender;
+- (IBAction)backgroundTapA:(id)sender;
 
 // For Database
 - (IBAction)saveInfo:(id)sender;

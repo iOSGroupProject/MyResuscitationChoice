@@ -38,4 +38,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 @end

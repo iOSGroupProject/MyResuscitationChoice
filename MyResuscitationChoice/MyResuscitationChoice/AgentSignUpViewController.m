@@ -106,6 +106,10 @@
     [self loginView];
     
 }
+
+- (IBAction)backgroundTapA:(id)sender {
+    [self.view endEditing:YES];
+}
 -(void)loginView {
     [self performSegueWithIdentifier:@"agentlogin" sender:nil];
 }

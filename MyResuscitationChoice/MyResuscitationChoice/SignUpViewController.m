@@ -106,6 +106,11 @@
     [self loginView];
     
 }
+
+- (IBAction)backgroundTap:(id)sender {
+    
+    [self.view endEditing:YES];
+}
 -(void)loginView {
     [self performSegueWithIdentifier:@"login" sender:nil];
 }
@@ -138,6 +143,8 @@
         NSLog(@"Could not execute the query.");
     }
 }
+
+
 
 // peopleInfo(UID integer primary key, PrimaryFirstName text, PrimaryLastName text, PrimaryPhoneNumber text, PrimaryEmail text, PrimaryDateOfBirth text, AdvancedDirectiveLocation text, AgentFirstName text, AgentLastName text, AgentPhoneNumber text, AgentDateOfBirth text, UserChoice text, Username text, Password text)
 @end

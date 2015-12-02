@@ -56,4 +56,13 @@
     [self dismissViewControllerAnimated:YES completion: nil];
 }
 
+- (IBAction)backgroundTapL:(id)sender {
+    [self.view endEditing:YES];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
 @end

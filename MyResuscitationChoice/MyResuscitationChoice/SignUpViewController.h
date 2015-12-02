@@ -24,6 +24,7 @@
 
 - (IBAction)registerUser:(id)sender;
 - (IBAction)login:(id)sender;
+- (IBAction)backgroundTap:(id)sender;
 
 // For Database
 - (IBAction)saveInfo:(id)sender;

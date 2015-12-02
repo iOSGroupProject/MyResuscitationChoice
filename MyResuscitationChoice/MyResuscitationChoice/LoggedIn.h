@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoggedIn : UIViewController
+@interface LoggedIn : UIViewController <UITextFieldDelegate>
 - (IBAction)Loggedout:(id)sender;
 
 @end

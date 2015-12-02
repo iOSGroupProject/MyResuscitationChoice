@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginPage : UIViewController
+@interface LoginPage : UIViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 - (IBAction)LoginButon:(id)sender;
 - (IBAction)CancelButton:(id)sender;
+- (IBAction)backgroundTapL:(id)sender;
 
 @end
