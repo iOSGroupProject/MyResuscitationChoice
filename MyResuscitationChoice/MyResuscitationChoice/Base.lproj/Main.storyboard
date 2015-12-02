@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RQv-Mm-OBL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RQv-Mm-OBL">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -176,7 +176,6 @@
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="agentregisterUser:" destination="RQv-Mm-OBL" eventType="touchUpInside" id="ofc-il-UCd"/>
                                     <action selector="registerUser:" destination="RQv-Mm-OBL" eventType="touchUpInside" id="Kih-tN-hjJ"/>
                                     <action selector="saveInfo:" destination="RQv-Mm-OBL" eventType="touchUpInside" id="LHD-Ol-NS7"/>
                                     <segue destination="ayp-uR-6yz" kind="show" id="asV-fx-RxF"/>
@@ -284,16 +283,6 @@
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="agentFirstName" destination="OvP-6T-Rbx" id="fT3-XI-lQ0"/>
-                        <outlet property="agentLastName" destination="F4h-pg-WbN" id="pPu-KY-o4h"/>
-                        <outlet property="agentdateOfBirth" destination="Lyz-Wi-Jl2" id="Ct7-07-0Nn"/>
-                        <outlet property="agentemailID" destination="04L-zx-vWp" id="0zw-Nr-Ogt"/>
-                        <outlet property="agentloginBtn" destination="k5F-Gt-bsY" id="vz5-Oj-IVX"/>
-                        <outlet property="agentpasswordFiled" destination="w2M-Ow-YcV" id="aCh-ou-CkO"/>
-                        <outlet property="agentphoneNumber" destination="HzJ-1c-sR1" id="mQG-0F-Zfb"/>
-                        <outlet property="agentreEnterPwd" destination="FE1-ps-BPF" id="xv8-OA-uQu"/>
-                        <outlet property="agentregisterBtn" destination="kZC-Wp-xdh" id="Hvz-yD-AgV"/>
-                        <outlet property="agentusernameField" destination="Y3T-QL-f8r" id="vCV-75-xm9"/>
                         <outlet property="dateOfBirth" destination="Lyz-Wi-Jl2" id="dXJ-Q8-jDx"/>
                         <outlet property="emailID" destination="04L-zx-vWp" id="cFh-lt-A6i"/>
                         <outlet property="loginBtn" destination="k5F-Gt-bsY" id="b3N-kw-9AK"/>
@@ -310,10 +299,10 @@
             </objects>
             <point key="canvasLocation" x="94" y="-930"/>
         </scene>
-        <!--View Controller-->
+        <!--Agent Sign Up View Controller-->
         <scene sceneID="OWo-cb-b86">
             <objects>
-                <viewController id="My7-o7-1Wo" sceneMemberID="viewController">
+                <viewController id="My7-o7-1Wo" customClass="AgentSignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A86-lh-zO7"/>
                         <viewControllerLayoutGuide type="bottom" id="ruh-8M-gjI"/>
@@ -467,15 +456,25 @@
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="registerUser:" destination="RQv-Mm-OBL" eventType="touchUpInside" id="mkI-UZ-JVv"/>
-                                    <action selector="saveInfo:" destination="RQv-Mm-OBL" eventType="touchUpInside" id="EaF-XK-DeR"/>
-                                    <segue destination="48B-l5-gRj" kind="show" identifier="agentRegister" id="WlK-Wb-7kh"/>
+                                    <action selector="agentregisterUser:" destination="My7-o7-1Wo" eventType="touchUpInside" id="K6v-6o-u56"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="agentFirstName" destination="hHG-Y7-J8Y" id="nK0-3r-oEh"/>
+                        <outlet property="agentLastName" destination="hVH-2W-OW2" id="T1K-0b-Cfq"/>
+                        <outlet property="agentdateOfBirth" destination="UiM-ik-l8q" id="3i6-b3-mnQ"/>
+                        <outlet property="agentemailID" destination="cTR-Ej-yyu" id="2sx-83-b0i"/>
+                        <outlet property="agentloginBtn" destination="wkB-YD-bVu" id="x5m-jz-Ska"/>
+                        <outlet property="agentpasswordFiled" destination="ULP-PE-q1Q" id="Xo1-da-X4i"/>
+                        <outlet property="agentphoneNumber" destination="Buh-qJ-3Db" id="08i-8J-0hX"/>
+                        <outlet property="agentreEnterPwd" destination="Cpw-Td-rLZ" id="uq9-ct-gqb"/>
+                        <outlet property="agentregisterBtn" destination="qvH-sa-bNb" id="HvU-0Y-YiX"/>
+                        <outlet property="agentusernameField" destination="9Ni-d9-0cG" id="CQi-8v-Gwv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQv-FT-HjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -555,57 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KxK-vw-OTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="92" y="-219"/>
-        </scene>
-        <!--Logged In-->
-        <scene sceneID="2Ra-1a-urK">
-            <objects>
-                <viewController id="48B-l5-gRj" customClass="LoggedIn" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NlI-dR-ksS"/>
-                        <viewControllerLayoutGuide type="bottom" id="MhZ-Fc-6jU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Rio-qe-M02">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have registered successfully. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqc-aZ-OKL">
-                                <rect key="frame" x="9" y="20" width="518" height="144"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjn-RZ-4Fj">
-                                <rect key="frame" x="128" y="16" width="48" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Logout">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="Loggedout:" destination="48B-l5-gRj" eventType="touchUpInside" id="LPj-e3-FUq"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All the videos should be displayed here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vc-JA-COc">
-                                <rect key="frame" x="-34" y="116" width="303" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yXN-nh-xuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-790" y="-921"/>
-=======
-            <point key="canvasLocation" x="118" y="-117"/>
->>>>>>> 47d6690511baa67e996ca2acb522cbf532b0eeaa
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vyw-Rz-Yup">
@@ -640,6 +589,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Es8-0R-2FM">
                                 <rect key="frame" x="20" y="90" width="349" height="41"/>
+                                <animations/>
                                 <state key="normal" title="play"/>
                                 <connections>
                                     <action selector="Play:" destination="ayp-uR-6yz" eventType="touchUpInside" id="Ks3-JM-xdd"/>
@@ -647,6 +597,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Web-Hb-bVM">
                                 <rect key="frame" x="20" y="196" width="349" height="24"/>
+                                <animations/>
                                 <state key="normal" title="play"/>
                                 <connections>
                                     <action selector="play2:" destination="ayp-uR-6yz" eventType="touchUpInside" id="UzM-HS-AbN"/>
@@ -654,6 +605,7 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tAT-pi-VeS">
                                 <rect key="frame" x="56" y="64" width="277" height="30"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.87736742420000002" green="0.45949042779999999" blue="0.1274748517" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -676,10 +628,12 @@
                             </textField>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ThV-uK-IHV">
                                 <rect key="frame" x="20" y="228" width="349" height="62"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPQ-ht-vhg">
                                 <rect key="frame" x="179" y="298" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="Play3:" destination="ayp-uR-6yz" eventType="touchUpInside" id="eAc-av-MOf"/>
@@ -688,10 +642,12 @@
                             </button>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENj-gV-tBc">
                                 <rect key="frame" x="20" y="336" width="349" height="59"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IH-4C-4UR">
                                 <rect key="frame" x="179" y="395" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" title="play"/>
                                 <connections>
                                     <action selector="Play4:" destination="ayp-uR-6yz" eventType="touchUpInside" id="WFd-mD-lDT"/>
@@ -699,6 +655,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd0-At-jlT">
                                 <rect key="frame" x="179" y="496" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" title="play"/>
                                 <connections>
                                     <action selector="Play5:" destination="ayp-uR-6yz" eventType="touchUpInside" id="ZDL-jM-5PF"/>
@@ -706,18 +663,22 @@
                             </button>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fu8-Pt-yUb">
                                 <rect key="frame" x="20" y="430" width="349" height="58"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8q-99-yIh">
                                 <rect key="frame" x="20" y="534" width="349" height="66"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s6Q-Ln-4dD">
                                 <rect key="frame" x="20" y="127" width="349" height="61"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
@@ -734,11 +695,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
-        <segue reference="WlK-Wb-7kh"/>
-        <segue reference="YsR-PW-rU2"/>
-=======
         <segue reference="asV-fx-RxF"/>
->>>>>>> 47d6690511baa67e996ca2acb522cbf532b0eeaa
+        <segue reference="YsR-PW-rU2"/>
     </inferredMetricsTieBreakers>
 </document>

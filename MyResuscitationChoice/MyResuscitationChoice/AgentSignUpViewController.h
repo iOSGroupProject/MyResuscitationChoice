@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AgentSignUpViewController : UIViewController
+@interface AgentSignUpViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *agentregisterBtn;
 @property (weak, nonatomic) IBOutlet UIButton *agentloginBtn;

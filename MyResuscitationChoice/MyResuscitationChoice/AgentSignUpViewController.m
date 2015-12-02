@@ -102,7 +102,7 @@
     [self performSegueWithIdentifier:@"agentRegister" sender:nil];
 }
 
-- (IBAction)login:(id)sender{
+- (IBAction)agentlogin:(id)sender{
     [self loginView];
     
 }
