@@ -14,9 +14,7 @@
 
 
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *ahmed1;
 // For recording feature
-@property (nonatomic,strong) MPMoviePlayerController * moviePlayer;
 @property (nonatomic,strong) NSString * moviePath;
 // For Collections
 @property (weak, nonatomic) IBOutlet UIWebView *video;

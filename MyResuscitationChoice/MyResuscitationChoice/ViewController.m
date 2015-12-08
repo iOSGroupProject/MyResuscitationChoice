@@ -10,7 +10,6 @@
 
 @interface ViewController ()
 
-@property UIImagePickerController * Ahmed;
 @property ( nonatomic) NSString * PatientDirectedVideoMessage;
 @end
 
@@ -43,7 +42,6 @@
 }
 - (IBAction)record:(id)sender {
         [self startCameraControllerFromViewController:self usingDelegate:self];
-//      [self viewWillAppear:YES];
     
 
 
@@ -118,14 +116,7 @@
 
 
 
-#pragma mark - Save video callbacks
 
-- (void) video:(NSString *) path didFinishSavingWithError:(NSError *)error contextInfo:(void *) contextInfo {
-    if(error) {
-    } else {
-        
-    }
-}
 
 #pragma mark - UIImagePickerControllerDelegate methods
 
@@ -138,16 +129,11 @@
     CGRect lablelocation = CGRectMake(0,45, 410,600);
     
     UILabel *lable = [[UILabel alloc]initWithFrame:lablelocation];
-//    lable.backgroundColor = [UIColor redColor];
     lable.backgroundColor = [UIColor clearColor];
     
-//    lable.lineBreakMode=2;
     lable.numberOfLines = 0;
-//    lable.adjustsFontSizeToFitWidth = YES;
     
     [self.view addSubview:lable];
-  
-    //lable.transform = CGAffineTransformMakeRotation(M_PI/2);
     
 
     lable.text=  [self scribt];
@@ -156,7 +142,6 @@
     CGRect Firstlablelocation = CGRectMake(0,0, 410,600);
     
     UILabel *Firstlable = [[UILabel alloc]initWithFrame:Firstlablelocation];
-    //    lable.backgroundColor = [UIColor redColor];
     Firstlable.backgroundColor = [UIColor colorWithRed:1.0 green:10.0 blue:1.0 alpha:0.4];
     
     [lable addSubview:Firstlable];
@@ -181,23 +166,7 @@
     cameraUI.delegate = delegate;
     [controller presentViewController:cameraUI animated:YES completion:nil];
 
-
-    
-//    UIView *controllerView = cameraUI.view;
-//    
-//    controllerView.alpha = 0.0;
-//    controllerView.transform = CGAffineTransformMakeScale(0.5, 0.5);
-//    
-//    [[[[UIApplication sharedApplication] delegate] window] addSubview:controllerView];
-//    
-//    [UIView animateWithDuration:0.3
-//                          delay:0.0
-//                        options:UIViewAnimationOptionCurveLinear
-//                     animations:^{
-//                         controllerView.alpha = 10.0;
-//                     }
-//                     completion:nil];
-    
+ 
     
     
     return YES;
@@ -220,24 +189,6 @@
     
 }
 
-
-
-#pragma mark - MPMoviePlayerController notification callbacks
- - ( void)viewWillAppear:(BOOL)animated
- {
-	[super viewWillAppear:animated];
-    
-     
-
-// 
-//	//Add sub view
-////	ViewController *vc1 = [[ViewController alloc] init];
-//     self.ahmed1.adjustsFontSizeToFitWidth=YES;
-//     self.ahmed1.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
-//	[self.view addSubview:self.ahmed1];
-//    
-//    self.ahmed1.frame = CGRectMake(100, 100, 320, 160);   //Set the sub view position within this main view
- }
 
 
 @end
