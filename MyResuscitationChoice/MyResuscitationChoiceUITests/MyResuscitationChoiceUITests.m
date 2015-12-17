@@ -37,5 +37,75 @@
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
+- (void)testRecording {
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [[app.otherElements containingType:XCUIElementTypeStaticText identifier:@"Join Today"].element tap];
+    [app.buttons[@"Register"] tap];
+    
+    XCUIElement *recordButton = app.buttons[@"Record"];
+    [recordButton tap];
+    [recordButton tap];
+    [app.buttons[@"VideoCapture"] tap];
+    [app.buttons[@"VideoCapture"] tap];
+    [app.buttons[@"Use Video"] tap];
+    
+    XCUIElement *saveButton = app.buttons[@"Save"];
+    [saveButton tap];
+    
+    
+    // Use recording to get started writing UI tests.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+}
+
+-(void)testSignature{
+    
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.buttons[@"Register"] tap];
+    [app.buttons[@"Record"] tap];
+    [app.buttons[@"Sign Your Video"] tap];
+    [[[[[[app childrenMatchingType:XCUIElementTypeWindow] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeOther] elementBoundByIndex:2] childrenMatchingType:XCUIElementTypeOther].element tap];
+    [app.buttons[@"Done"] tap];
+    
+    
+    
+}
+-(void)testSaveBeforRecording{
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.buttons[@"Register"] tap];
+    
+    [app.buttons[@"Record"] tap];
+    [app.buttons[@"Save"] tap];
+    [app.alerts[@"Error"].collectionViews.buttons[@"OK"] tap];
+    
+}
+-(void)testMoreThanOneTime{
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.buttons[@"Register"] tap];
+    
+    XCUIElement *recordButton = app.buttons[@"Record"];
+    [recordButton tap];
+    [recordButton tap];
+    [app.buttons[@"VideoCapture"] tap];
+    [app.buttons[@"VideoCapture"] tap];
+    
+    
+    [app.buttons[@"Use Video"] tap];
+    
+    XCUIElement *saveButton = app.buttons[@"Save"];
+    [saveButton tap];
+    [app.alerts.collectionViews.buttons[@"OK"] tap];
+    [saveButton tap];
+    [app.alerts[@"Error"].collectionViews.buttons[@"OK"] tap];
+    
+    
+    
+    
+}
 
 @end

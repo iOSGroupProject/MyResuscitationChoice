@@ -15,7 +15,6 @@
 
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 // For recording feature
-@property (nonatomic,strong) NSString * moviePath;
 // For Collections
 @property (weak, nonatomic) IBOutlet UIWebView *video;
 @property (weak, nonatomic) IBOutlet UIWebView *video2;
