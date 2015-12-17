@@ -33,28 +33,6 @@
     [super tearDown];
 }
 
--(void)testLogin{
-    SignUpViewController *signup = [[SignUpViewController alloc]init];
-    signup.primaryFirstName = (UITextField *)@"jenny";
-    signup.primaryLastName = (UITextField *)@"root";
-    signup.usernameField = (UITextField *)@"jroot";
-    signup.passwordFiled = (UITextField *)@"jenny";
-    signup.reEnterPwd = (UITextField *)@"root";
-    signup.emailID = (UITextField *)@"jroot@djkfd.com";
-    signup.phoneNumber = (UITextField *)@"542544254";
-    signup.dateOfBirth = (UITextField *)@"2007-12-15";
-    
-    XCTAssertTrue([signup.primaryFirstName isEqual:@"jenny"]);
-    XCTAssertTrue([signup.primaryLastName isEqual:@"root"]);
-    XCTAssertTrue([signup.usernameField isEqual:@"jroot"]);
-    XCTAssertTrue([signup.passwordFiled isEqual:@"root"]);
-    XCTAssertTrue([signup.reEnterPwd isEqual:@"jenny"]);
-    XCTAssertTrue([signup.emailID isEqual:@"jroot@djkfd.com"]);
-    XCTAssertTrue([signup.phoneNumber isEqual:@"542544254"]);
-    XCTAssertTrue([signup.dateOfBirth isEqual:@"2007-12-15"]);
-
-    
-}
 - (void)testExample {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
