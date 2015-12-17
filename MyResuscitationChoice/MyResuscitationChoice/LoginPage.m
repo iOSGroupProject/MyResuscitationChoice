@@ -40,6 +40,8 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if([_usernameTextField.text isEqualToString:[defaults objectForKey:@"username"]] && [_passwordTextField.text isEqualToString:[defaults objectForKey:@"password"]]) {
         [self performSegueWithIdentifier:@"login" sender:self];
+        _usernameTextField.text = nil;
+        _passwordTextField.text = nil;
         
     }
     
@@ -51,9 +53,17 @@
     }
     
 }
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 
 - (IBAction)CancelButton:(id)sender {
     [self dismissViewControllerAnimated:YES completion: nil];
+}
+
+- (IBAction)backGroundTap:(id)sender {
+    [self.view endEditing:YES];
 }
 
 @end

@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SignUpViewController : UIViewController <UITextFieldDelegate>
+@interface SignUpViewController : UIViewController <UITextFieldDelegate>{
+    UIDatePicker *datePicker;
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *registerBtn;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
@@ -24,6 +26,7 @@
 
 - (IBAction)registerUser:(id)sender;
 - (IBAction)login:(id)sender;
+- (IBAction)BackgroudTap:(id)sender;
 
 // For Database
 - (IBAction)saveInfo:(id)sender;

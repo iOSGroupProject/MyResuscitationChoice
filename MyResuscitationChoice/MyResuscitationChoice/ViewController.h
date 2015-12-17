@@ -27,6 +27,7 @@
 - (IBAction)Play3:(id)sender;
 - (IBAction)Play4:(id)sender;
 - (IBAction)Play5:(id)sender;
+- (IBAction)Logout:(id)sender;
 
 
 @end

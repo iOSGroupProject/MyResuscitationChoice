@@ -23,17 +23,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // For Database
-    self.primaryFirstName.delegate = self;
+    
+    /*self.primaryFirstName.delegate = self;
     self.primaryLastName.delegate = self;
     self.usernameField.delegate = self;
     self.passwordFiled.delegate = self;
     self.dateOfBirth.delegate = self;
-    self.emailID.delegate = self;
+    self.emailID.delegate = self;*/
     self.phoneNumber.delegate = self;
     self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"database.sql"];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    datePicker=[[UIDatePicker alloc]init];
+    datePicker.datePickerMode = UIDatePickerModeDate;
+    //UIDatePicker.date=UIDatePickerModeDate;
+    [_dateOfBirth setInputView:datePicker];
+    UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
+    [toolBar setTintColor:[UIColor grayColor]];
+    UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(ShowSelectedDate)];
+    UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
+    [_dateOfBirth setInputAccessoryView:toolBar];
+    
+ 
     
     if(![defaults boolForKey:@"registered"]) {
         NSLog(@"No User Registered");
@@ -45,11 +58,35 @@
     }
     
 }
+-(void) ShowSelectedDate
+{
+    NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"YYYY-MM-dd"];
+    _dateOfBirth.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
+    [_dateOfBirth resignFirstResponder];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    
+    NSString *resultingString = [textField.text stringByReplacingCharactersInRange: range withString: string];
+    
+    // This allows backspace
+    if ([resultingString length] == 0) {
+        return true;
+    }
+    
+    double holder;
+    NSScanner *scan = [NSScanner scannerWithString: resultingString];
+    
+    return [scan scanDouble: &holder] && [scan isAtEnd];
+}
+
+
 
 - (IBAction)registerUser:(id)sender {
     if([_usernameField.text isEqualToString:@""] || [_passwordFiled.text isEqualToString:@""] || [_reEnterPwd.text isEqualToString:@""] || [_primaryLastName.text isEqualToString:@""] || [_primaryFirstName.text isEqualToString:@""] || [_phoneNumber.text isEqualToString:@""]|| [_emailID.text isEqualToString:@""] || [_dateOfBirth.text isEqualToString:@""]){
@@ -61,7 +98,7 @@
         [alert addAction:defaultAction];
         [self presentViewController:alert animated:YES completion:nil];
         
-    }
+            }
     
     else if ([_passwordFiled.text isEqualToString:_reEnterPwd.text]) {
         NSLog(@"Password Match");
@@ -94,6 +131,15 @@
     
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
     [success addAction:defaultAction];
+    _usernameField.text = nil;
+    _passwordFiled.text = nil;
+    _reEnterPwd.text =nil;
+    _dateOfBirth.text = nil;
+    _emailID.text = nil;
+    _phoneNumber.text = nil;
+    _primaryFirstName.text =nil;
+    _primaryLastName.text =nil;
+    
     //[self presentViewController:success animated:YES completion:nil];
     [self navRef];
 }
@@ -105,6 +151,10 @@
 - (IBAction)login:(id)sender{
     [self loginView];
     
+}
+
+- (IBAction)BackgroudTap:(id)sender {
+     [self.view endEditing:YES];
 }
 -(void)loginView {
     [self performSegueWithIdentifier:@"login" sender:nil];

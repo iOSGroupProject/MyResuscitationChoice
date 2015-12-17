@@ -97,6 +97,10 @@
     [_video5 loadRequest:request];
 }
 
+- (IBAction)Logout:(id)sender {
+        [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 #pragma mark - Save video callbacks
 
